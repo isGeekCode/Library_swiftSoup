@@ -13,9 +13,11 @@
 		9649F398296569170094B572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9649F396296569170094B572 /* Main.storyboard */; };
 		9649F39A296569190094B572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9649F399296569190094B572 /* Assets.xcassets */; };
 		9649F39D296569190094B572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9649F39B296569190094B572 /* LaunchScreen.storyboard */; };
+		E07BD82B9F0D6750141061B9 /* Pods_CrawlingPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F2549E180BE21FA4A9E51E /* Pods_CrawlingPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541982A749434C5F425867AD /* Pods-CrawlingPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrawlingPractice.debug.xcconfig"; path = "Target Support Files/Pods-CrawlingPractice/Pods-CrawlingPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		9649F38D296569170094B572 /* CrawlingPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrawlingPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9649F390296569170094B572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9649F392296569170094B572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		9649F399296569190094B572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9649F39C296569190094B572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9649F39E296569190094B572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2F2549E180BE21FA4A9E51E /* Pods_CrawlingPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrawlingPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82DF00815DC2581BBAEFF25 /* Pods-CrawlingPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrawlingPractice.release.xcconfig"; path = "Target Support Files/Pods-CrawlingPractice/Pods-CrawlingPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07BD82B9F0D6750141061B9 /* Pods_CrawlingPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B98BAAF7D99F0E3B6690AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				541982A749434C5F425867AD /* Pods-CrawlingPractice.debug.xcconfig */,
+				E82DF00815DC2581BBAEFF25 /* Pods-CrawlingPractice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9649F384296569170094B572 = {
 			isa = PBXGroup;
 			children = (
 				9649F38F296569170094B572 /* CrawlingPractice */,
 				9649F38E296569170094B572 /* Products */,
+				13B98BAAF7D99F0E3B6690AF /* Pods */,
+				D8A435076D1AB4F312273C0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = CrawlingPractice;
 			sourceTree = "<group>";
 		};
+		D8A435076D1AB4F312273C0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2F2549E180BE21FA4A9E51E /* Pods_CrawlingPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9649F3A1296569190094B572 /* Build configuration list for PBXNativeTarget "CrawlingPractice" */;
 			buildPhases = (
+				9E50F36A038FBDE91EDF10C4 /* [CP] Check Pods Manifest.lock */,
 				9649F389296569170094B572 /* Sources */,
 				9649F38A296569170094B572 /* Frameworks */,
 				9649F38B296569170094B572 /* Resources */,
+				3B8CD776BCA0162FE924C271 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B8CD776BCA0162FE924C271 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrawlingPractice/Pods-CrawlingPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrawlingPractice/Pods-CrawlingPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrawlingPractice/Pods-CrawlingPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E50F36A038FBDE91EDF10C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrawlingPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9649F389296569170094B572 /* Sources */ = {
@@ -217,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +353,7 @@
 		};
 		9649F3A2296569190094B572 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 541982A749434C5F425867AD /* Pods-CrawlingPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +367,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +383,7 @@
 		};
 		9649F3A3296569190094B572 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E82DF00815DC2581BBAEFF25 /* Pods-CrawlingPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +397,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
